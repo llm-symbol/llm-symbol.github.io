@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Neuro-Symbolic Large Models: a family of projects that combine large language / vision models with formal symbolic reasoning.">
+  <meta name="keywords" content="neuro-symbolic AI, large language models, symbolic reasoning, logical reasoning, multimodal reasoning, SymbCoT, Aristotle, MuSLR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neuro-Symbolic Large Models</title>
+
+  <!-- Fonts & CSS (same look-and-feel as Nerfies) -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- JS (same as Nerfies) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Minimal navbar keeping Nerfies styling -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#top">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Sections</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="#intro">Introduction</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          
+
+          <h1 class="title is-1 publication-title">Neuro-Symbolic Large Models</h1>
+          <img src="./static/images/neuro-symb.png"
+               alt="Neuro-Symbolic Large Models Hero"
+               style="width: 55%; max-width: 360px; margin-bottom: 1.5rem; border-radius: 8px;">
+          <h2 class="subtitle is-4" style="margin-top: 1rem;">
+            Bridging large models with symbolic reasoning for faithful, interpretable intelligence.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== Introduction to the whole project line -->
+<section class="section" id="intro">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Why Neuro-Symbolic in the Era of LLMs?</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) and multimodal large langugage models (MLLMs) have unlocked impressive reasoning ability. However, when tasks demand <b>precise logical guarantees</b>,
+            <b>explicit structure</b>, or <b>reliable multi-step deduction</b>, purely neural approaches often fall short.
+            Their reasoning can be fluent yet brittle: explanations may sound convincing while quietly violating
+            basic logical constraints.
+          </p>
+          <p>
+            <b>Neuro-symbolic approaches</b> aim to close this gap by coupling LLMs with
+            <b>symbolic representations</b> and reasoning procedures</b>. Symbolic reasoning enable compositionality,
+            support program-like manipulation of knowledge, and good tracibility and interpretability. Neural models, in turn, offer strong capabilities
+            in learning, perception, and pattern discovery. When combined, they allow us to:
+          </p>
+          <ul>
+            <li><b>Improve faithfulness</b>: Reasoning steps can be tractable and verifiable, thus enabling faithful reasoning.</li>
+            <li><b>Enhance interpretability</b>: Symbolic traces and proofs provide human-inspectable explanations.</li>
+            <li><b>Enable compositional generalization</b>: Logic and constraints naturally capture reusable structures and rules.</li>
+            <li><b>Support robustness & safety</b>: Formal checks help enforce invariants in high-stakes scenarios.</li>
+            <li><b>Extend beyond text</b>: In multimodal settings, symbols provide a common reasoning layer over images, text, and other signals.</li>
+          </ul>
+          <p>
+            This page collects a set of <b>Neuro-Symbolic Large Model</b> projects—covering both
+            <b>symbolic-guided LLM reasoning</b> and <b>multimodal symbolic reasoning</b>—that explore these ideas
+            in different settings and benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects (categories & boxes only) -->
+<section class="section" id="projects">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Projects</h2>
+
+    <!-- Category 1: Symbolic-guided LLMs -->
+    <div class="content" style="margin-top: 2rem;">
+      <h3 class="title is-4">Symbolic-guided LLMs</h3>
+      <p class="has-text-justified" style="margin-bottom: 1rem;">
+        These projects use symbolic structures and logic to guide LLM reasoning, yielding more faithful,
+        controllable, and interpretable decision processes.
+      </p>
+      <div class="columns is-multiline">
+        <!-- SymbCoT box -->
+        <div class="column is-6">
+          <a href="https://llm-symbol.github.io/SymbCoT/" class="project-card-link">
+            <div class="card" style="height:100%; cursor:pointer;">
+              <div class="card-image" style="display:flex; justify-content:center; align-items:center; padding: 1rem;">
+                <img src="./static/images/symbcot-method.png" alt="SymbCoT project thumbnail"
+                    style="max-height:130px; width:auto; object-fit:contain;">
+              </div>
+              <div class="card-content">
+                <p class="title is-5">SymbCoT <span style="color:#c40000;">(ACL 2024)</span></p>
+                <p class="subtitle is-6">Faithful Logical Reasoning via Symbolic Chain-of-Thought</p>
+                <div class="content is-size-6">
+                  Fully LLM-based neuro-symbolic framework that lifts chain-of-thought into the symbolic space,
+                  combining natural language with explicit logic rules and verification for faithful logical reasoning.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Aristotle box -->
+        <div class="column is-6">
+          <a href="https://llm-symbol.github.io/Aristotle/" class="project-card-link">
+            <div class="card" style="height:100%; cursor:pointer;">
+              <div class="card-image" style="display:flex; justify-content:center; align-items:center; padding: 1rem;">
+                <img src="./static/images/aristotle-method.png" alt="Aristotle project thumbnail"
+                    style="max-height:130px; width:auto; object-fit:contain;">
+              </div>
+              <div class="card-content">
+                <p class="title is-5">Aristotle <span style="color:#c40000;">(ACL 2025 Oral)</span></p>
+                <p class="subtitle is-6">Mastering Logical Reasoning with a Logic-Complete Decompose–Search–Resolve Framework</p>
+                <div class="content is-size-6">
+                  A decompose–search–resolve framework that leverages symbolic expressions and logical rules
+                  to achieve logic-complete reasoning, improving both accuracy and efficiency over vanilla LLM CoT.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+    <!-- Category 2: Multimodal Symbolic Reasoning -->
+    <div class="content" style="margin-top: 2rem;">
+      <h3 class="title is-4">Multimodal Symbolic Reasoning</h3>
+      <p class="has-text-justified" style="margin-bottom: 1rem;">
+        These projects extend symbolic reasoning beyond text, grounding logical rules in images and other modalities
+        to assess and improve the multimodal reasoning ability of large models.
+      </p>
+      <div class="columns is-multiline">
+        <!-- MuSLR box -->
+        <div class="column is-6">
+          <a href="https://llm-symbol.github.io/MuSLR/" class="project-card-link">
+            <div class="card" style="height:100%; cursor:pointer;">
+              <div class="card-image" style="display:flex; justify-content:center; align-items:center; padding: 1rem;">
+                <img src="./static/images/muslr.png" alt="MuSLR project thumbnail"
+                    style="max-height:130px; width:auto; object-fit:contain;">
+              </div>
+              <div class="card-content">
+                <p class="title is-5">MuSLR <span style="color:#c40000;">(NeurIPS 2025)</span></p>
+                <p class="subtitle is-6">Multimodal Symbolic Logical Reasoning</p>
+                <div class="content is-size-6">
+                  The first multimodal symbolic reasoning benchmark grounded in formal logical rules. We also propose a LogiCAM framework building upon MLLMs to improve such ability.
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Contact -->
+<section class="section" id="contact">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Contact</h2>
+        <div class="content is-size-5" style="margin-top:1rem;">
+          <p>
+            If you are interested in these projects, feel free to contact
+            <a href="https://aiden0526.github.io/" target="_blank"><b>Jundong Xu</b></a>
+            to discuss research ideas and potential collaborations!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer (keeps Nerfies CC notice) -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- No BibTeX / paper link needed for this aggregate page, but you can add one if desired -->
+      <a class="icon-link" href="https://github.com/llm-symbol" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
+          </p>
+          <p>
+            Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
